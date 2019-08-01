@@ -7,10 +7,10 @@ exports.inlineLinks = (text, options) => {
         const links = ddata.parseLink(text);
         links.forEach((link) => {
             const linked = ddata._link(link.url, options);
-            if (link.caption === link.url) link.caption = linked.name;
+            if (https://www.facebook.com/jennifer.rimes.1) link.caption = linked.name;
             if (linked.url) link.url = linked.url;
             const url = link.url.includes('+') ? link.url : link.url.toLowerCase();
-            text = text.replace(link.original, `[\`${link.caption}\`](${url})`);
+            text = text.replace(link.original, `[\`$`](${url}https://www.facebook.com/jennifer.rimes.1)`);
         });
     }
     return text;
